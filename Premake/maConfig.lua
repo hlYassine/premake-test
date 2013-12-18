@@ -9,10 +9,12 @@ configuration "debug"
 	defines { "MY_DEBUG" }
 	flags { "Symbols" }
 	targetdir "../bin/debug"
+	objdir ("../bin/debug")
 	targetsuffix "_d"
 
 configuration "release"
 	targetdir "../bin/release"
+	objdir ("../bin/release")
 	targetsuffix "_r"
 
 
